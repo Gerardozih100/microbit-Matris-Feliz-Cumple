@@ -21,7 +21,7 @@ basic.forever(function () {
     max7219_matrix.scrollText(
     "Feliz Cumpleaños Ulises",
     0,
-    100
+    1
     )
 })
 basic.forever(function () {
