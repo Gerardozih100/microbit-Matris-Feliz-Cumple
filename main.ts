@@ -1,8 +1,29 @@
 input.onButtonPressed(Button.A, function () {
     music.setVolume(255)
+    basic.showLeds(`
+        . . . . .
+        . . . # .
+        # . # . #
+        . # . . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . # . . .
+        # . # . #
+        . . . # .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.B, function () {
     music.setVolume(0)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . # . .
+        . # . # .
+        . . . . .
+        `)
 })
 max7219_matrix.setup(
 4,
@@ -17,6 +38,15 @@ true
 )
 let Musica = 0
 let Texto = 0
+let Boton_A = 0
+let Boton_B = 0
+basic.showLeds(`
+    . . . . .
+    . # . # .
+    . . . . .
+    # . . . #
+    . # # # .
+    `)
 basic.forever(function () {
     max7219_matrix.scrollText(
     "Feliz Cumpleaños Ulises",
