@@ -49,7 +49,7 @@ basic.showLeds(`
     `)
 basic.forever(function () {
     max7219_matrix.scrollText(
-    "Feliz Cumpleaños Ulises",
+    "Feliz Cumple Ulises",
     0,
     1
     )
